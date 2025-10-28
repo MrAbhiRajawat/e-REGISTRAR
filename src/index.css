@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Edu-Unify Professional Theme */
+    --background: 220 15% 98%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    /* Deep Indigo - Authority & Trust */
+    --primary: 234 65% 25%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Vibrant Teal - Innovation & Growth */
+    --secondary: 178 65% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Warm Amber - Insights & Highlights */
+    --accent: 35 100% 55%;
+    --accent-foreground: 220 20% 15%;
+
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 15% 45%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 234 65% 25%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar - Professional Indigo */
+    --sidebar-background: 234 65% 25%;
+    --sidebar-foreground: 220 15% 95%;
+    --sidebar-primary: 178 65% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 234 60% 30%;
+    --sidebar-accent-foreground: 220 15% 95%;
+    --sidebar-border: 234 55% 35%;
+    --sidebar-ring: 178 65% 45%;
+
+    /* Custom Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(234 65% 25%) 0%, hsl(234 55% 35%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(178 65% 45%) 0%, hsl(178 75% 55%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(35 100% 55%) 0%, hsl(35 100% 65%) 100%);
+    
+    /* Shadows */
+    --shadow-card: 0 1px 3px 0 hsl(220 15% 15% / 0.1), 0 1px 2px -1px hsl(220 15% 15% / 0.1);
+    --shadow-elevated: 0 10px 15px -3px hsl(220 15% 15% / 0.1), 0 4px 6px -4px hsl(220 15% 15% / 0.1);
+    --shadow-glow: 0 0 30px hsl(178 65% 45% / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 220 15% 95%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 220 15% 95%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 220 15% 95%;
+
+    --primary: 234 75% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 178 70% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 35 100% 60%;
+    --accent-foreground: 220 25% 8%;
+
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 15% 65%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 234 75% 55%;
+
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 220 15% 90%;
+    --sidebar-primary: 178 70% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 220 15% 90%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 178 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
